@@ -1,0 +1,64 @@
+{
+  "model_name": "HistGradientBoostingRegressor",
+  "trained_at": "2026-09-29T09:42:38+00:00",
+  "last_observed_period": "2014-12",
+  "test_months": 24,
+  "features": [
+    "lag_1",
+    "lag_2",
+    "lag_3",
+    "lag_6",
+    "lag_12",
+    "roll_mean_3",
+    "roll_mean_12",
+    "month_sin",
+    "month_cos",
+    "time_index",
+    "state_code"
+  ],
+  "state_codes": {
+    "Arizona": 0,
+    "California": 1,
+    "Florida": 2,
+    "Georgia": 3,
+    "Illinois": 4,
+    "Louisiana": 5,
+    "Michigan": 6,
+    "New York": 7,
+    "Ohio": 8,
+    "Pennsylvania": 9,
+    "Texas": 10,
+    "Washington": 11
+  },
+  "metrics": {
+    "mae": 2.897,
+    "rmse": 3.925,
+    "r2": 0.8236
+  },
+  "baselines": {
+    "baseline_last_month": {
+      "mae": 3.809,
+      "rmse": 5.034,
+      "r2": 0.7099
+    },
+    "baseline_same_month_last_year": {
+      "mae": 3.948,
+      "rmse": 5.402,
+      "r2": 0.6658
+    }
+  },
+  "state_rmse": {
+    "Arizona": 2.422,
+    "California": 6.759,
+    "Florida": 3.742,
+    "Georgia": 2.054,
+    "Illinois": 3.457,
+    "Louisiana": 4.066,
+    "Michigan": 3.866,
+    "New York": 3.569,
+    "Ohio": 2.278,
+    "Pennsylvania": 3.311,
+    "Texas": 6.171,
+    "Washington": 2.155
+  }
+}

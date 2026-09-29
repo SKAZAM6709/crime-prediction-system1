@@ -1,0 +1,24 @@
+{
+  "target": "monthly reported incident count by state",
+  "feature_columns": [
+    "State",
+    "month",
+    "lag_1",
+    "lag_2",
+    "lag_3",
+    "lag_12"
+  ],
+  "training_rows": 2186,
+  "test_rows": 540,
+  "training_end": "2011-03-01",
+  "test_start": "2011-04-01",
+  "test_end": "2014-12-01",
+  "baseline_metrics": {
+    "mae": 3.793,
+    "rmse": 5.01
+  },
+  "model_metrics": {
+    "mae": 3.357,
+    "rmse": 4.415
+  }
+}
